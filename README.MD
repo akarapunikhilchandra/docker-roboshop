@@ -1,1 +1,1 @@
-for i in `ls -d */ | cut -d "/" -f1`; do cd $i; docker build -t joindevops/$i:v1 .; docker push akarapunikhilchandra/$i:v1; cd ..; done
+for i in `ls -d */ | cut -d "/" -f1`; do cd $i; docker build -t akarapunikhilchandra/$i:v1 .; docker push akarapunikhilchandra/$i:v1; cd ..; done
